@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage
+END
+SDImageCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDImageCache.h
+END
+SDWebImageDecoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageDecoder.h
+END
+SDImageCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDImageCache.m
+END
+SDWebImageDecoder.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageDecoder.m
+END
+SDWebImageManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageManager.h
+END
+UIButton+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIButton+WebCache.h
+END
+SDWebImageDownloaderOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageDownloaderOperation.h
+END
+SDWebImageManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageManager.m
+END
+UIImageView+WebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImageView+WebCache.h
+END
+UIImage+WebP.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImage+WebP.h
+END
+UIButton+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIButton+WebCache.m
+END
+SDWebImageDownloaderOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageDownloaderOperation.m
+END
+UIImageView+WebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImageView+WebCache.m
+END
+UIImage+WebP.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImage+WebP.m
+END
+NSData+ImageContentType.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/NSData+ImageContentType.h
+END
+UIView+WebCacheOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIView+WebCacheOperation.h
+END
+SDWebImageDownloader.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageDownloader.h
+END
+NSData+ImageContentType.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/NSData+ImageContentType.m
+END
+UIView+WebCacheOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIView+WebCacheOperation.m
+END
+SDWebImageDownloader.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageDownloader.m
+END
+UIImageView+HighlightedWebCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImageView+HighlightedWebCache.h
+END
+SDWebImageCompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageCompat.h
+END
+UIImageView+HighlightedWebCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImageView+HighlightedWebCache.m
+END
+UIImage+MultiFormat.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImage+MultiFormat.h
+END
+SDWebImagePrefetcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImagePrefetcher.h
+END
+SDWebImageCompat.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageCompat.m
+END
+UIImage+GIF.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImage+GIF.h
+END
+UIImage+MultiFormat.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImage+MultiFormat.m
+END
+SDWebImagePrefetcher.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImagePrefetcher.m
+END
+UIImage+GIF.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/UIImage+GIF.m
+END
+SDWebImageOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/The_third_party/SDWebImage/SDWebImageOperation.h
+END

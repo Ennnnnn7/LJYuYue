@@ -1,0 +1,28 @@
+//
+//  TLBPrefixHeader.pch
+//  yuyue
+//
+//  Created by lanou3g on 15/9/18.
+//  Copyright (c) 2015年 lanou3g. All rights reserved.
+//
+
+#ifndef yuyue_TLBPrefixHeader_pch
+#define yuyue_TLBPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#define kScreenWidth               [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight               [UIScreen mainScreen].bounds.size.height
+
+#define UserSuccessLogin            [NSString stringWithFormat:@"userSuccessLogin"]
+#define UserSuccessCancel            [NSString stringWithFormat:@"userSuccessCancel"]
+
+#define bjPictureUrl(page)   [NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php?a=list&appname=baisishequ&asid=79C90406-DB8A-4758-9466-DEDB502C2A14&c=data&client=iphone&device=ios%20%E8%AE%BE%E5%A4%87&from=ios&jbk=0&mac=&market=&openudid=3739a3941c7bb4f82c78c8c53228edcb4a14f0d0&page=0&per=%d&sub_flag=1&type=10&udid=&ver=3.6",page]
+
+#define bjPictureNewUrl(page)   [NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php?a=newlist&appname=baisishequ&asid=79C90406-DB8A-4758-9466-DEDB502C2A14&c=data&client=iphone&device=ios%20%E8%AE%BE%E5%A4%87&from=ios&jbk=0&mac=&market=&openudid=3739a3941c7bb4f82c78c8c53228edcb4a14f0d0&page=%d&per=20&sub_flag=1&type=1&udid=&ver=3.6",page]
+
+#define bjTexteUrl(page)   [NSString stringWithFormat:@"http://api.budejie.com/api/api_open.php?a=newlist&appname=baisishequ&asid=79C90406-DB8A-4758-9466-DEDB502C2A14&c=data&client=iphone&device=ios%20%E8%AE%BE%E5%A4%87&from=ios&jbk=0&mac=&market=&openudid=3739a3941c7bb4f82c78c8c53228edcb4a14f0d0&page=0&per=%d&sub_flag=1&type=29&udid=&ver=3.6",page]
+#define kCaches NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject

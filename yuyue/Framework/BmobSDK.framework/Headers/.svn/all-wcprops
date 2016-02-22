@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers
+END
+BmobObjectsBatch.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobObjectsBatch.h
+END
+BmobACL.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobACL.h
+END
+BmobProFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobProFile.h
+END
+BmobInstallation.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobInstallation.h
+END
+BmobRole.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobRole.h
+END
+BmobSMS.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobSMS.h
+END
+BQLQueryResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BQLQueryResult.h
+END
+BmobConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobConfig.h
+END
+BmobQuery.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobQuery.h
+END
+BmobObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobObject.h
+END
+BmobCloud.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobCloud.h
+END
+BmobTableSchema.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobTableSchema.h
+END
+BmobGPSSwitch.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobGPSSwitch.h
+END
+BmobRelation.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobRelation.h
+END
+BmobUser.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobUser.h
+END
+BmobPush.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobPush.h
+END
+Bmob.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/Bmob.h
+END
+BmobFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobFile.h
+END
+BmobObject+Subclass.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobObject+Subclass.h
+END
+BmobEvent.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobEvent.h
+END
+BmobImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobImage.h
+END
+BmobGeoPoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobGeoPoint.h
+END
+BmobMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobMessage.h
+END
+BmobErrorList.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/tlbyy/!svn/ver/55/yuyue2.0/yuyue/Framework/BmobSDK.framework/Headers/BmobErrorList.h
+END

@@ -1,0 +1,301 @@
+//
+//  MeunTableViewController.m
+//  text
+//
+//  Created by lanou3g on 15/9/15.
+//  Copyright (c) 2015年 lanou3g. All rights reserved.
+//
+
+#import "MeunTableViewController.h"
+#import "NavigationViewController.h"
+#import "UIViewController+REFrostedViewController.h"
+#import "REFrostedViewController.h"
+#import "LJHomeTableViewController.h"
+#import "BJTextTableViewController.h"
+#import "ZXViewController.h"
+#import "FavoriteTableViewController.h"
+#import "BJAllViewController.h"
+#import "MeunTableViewCell.h"
+#import "UserInfo.h"
+#import "MBProgressHUD+MJ.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
+
+#import "LoginViewController.h"
+@interface MeunTableViewController ()<UIAlertViewDelegate,UIGestureRecognizerDelegate>
+@property (nonatomic,strong) UIAlertView *successLogin;
+@end
+
+@implementation MeunTableViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //分离器的颜色
+    self.tableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
+    //透明
+    self.tableView.opaque = NO;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.tableHeaderView = ({
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
+        _imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        _imageView.image = [UIImage imageNamed:@"headImage"];
+        _imageView.layer.masksToBounds = YES;
+        _imageView.layer.cornerRadius = 50.0;
+        _imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+        _imageView.layer.borderWidth = 3.0f;
+        _imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
+        _imageView.layer.shouldRasterize = YES;
+        _imageView.clipsToBounds = YES;
+        
+        
+        
+        _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
+        _label.text = @"娱 悦";
+        _label.textAlignment = NSTextAlignmentCenter;
+        _label.font = [UIFont fontWithName:@"HelveticaNeue" size:18];
+        _label.backgroundColor = [UIColor clearColor];
+        _label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
+        [_label sizeToFit];
+        
+//        _label.userInteractionEnabled = YES;
+//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loginUser)];
+//        tap.delegate = self;
+//        [_label addGestureRecognizer:tap];
+        
+        
+        _label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        [view addSubview:_imageView];
+        [view addSubview:_label];
+        
+//       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeImageViewAndLabel) name:UserSuccessLogin object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeImageViewAndLabel) name:UserSuccessCancel object:nil];
+        view;
+    });
+    self.tableView.rowHeight = 53;
+    self.tableView.bounces = NO;
+    
+//    self.tableView.tableHeaderView.userInteractionEnabled = YES;
+//    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(loginUser)];
+//    longPress.minimumPressDuration = 1;
+//    longPress.delegate = self;
+//    [self.tableView addGestureRecognizer:longPress];
+}
+
+// tableView防止手势冲突
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+//{
+//    if ([otherGestureRecognizer.view isKindOfClass:[UITableView class]]) {
+//        return YES;
+//    }
+//    return NO;
+//}
+
+
+
+#pragma mark - tableview Delegate
+/** 将显示单元 */
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor clearColor];
+//    cell.textLabel.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
+//    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
+//    cell.imageView.image = [UIImage imageNamed:@"redheart"];
+    
+}
+/** 标题部分的视图 */
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0)  return nil;
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 34)];
+    view.backgroundColor = [UIColor colorWithRed:167/255.0f green:167/255.0f blue:167/255.0f alpha:0.6f];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 8, 0, 0)];
+    label.text = @"其他";
+    label.font = [UIFont boldSystemFontOfSize:20];
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor clearColor];
+    [label sizeToFit];
+    [view addSubview:label];
+    
+    return view;
+}
+/** 区头高度 */
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) return 0;
+    return 34;
+}
+
+#pragma mark - Tableview Datasource
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 54;
+//}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
+    // Return the number of sections.
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    // Return the number of rows in the section.
+    return section ? 4 : 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    MeunTableViewCell *cell = [MeunTableViewCell setMeunCell:tableView];
+    NSDictionary *dic1 = @{@"headimage":@"cm2_discover_icn_voicebook",@"name":@"新闻"};
+    NSDictionary *dic2 = @{@"headimage":@"cm2_discover_icn_taklshow",@"name":@"段子"};
+    NSDictionary *dic3 = @{@"headimage":@"cm2_discover_icn_movie",@"name":@"视频"};
+    
+    NSDictionary *dic4 = @{@"headimage":@"redheart",@"name":@"收藏"};
+    NSDictionary *dic5 = @{@"headimage":@"cm2_skin_btn_del",@"name":@"清除缓存"};
+    NSDictionary *dic6 = @{@"headimage":@"cm2_discover_icn_dj",@"name":@"关于我们"};
+    NSDictionary *dic7 = @{@"headimage":@"cm2_pub_icn_err",@"name":@"注销账号"};
+    if (indexPath.section == 0) {
+        NSArray *titles = @[ dic1, dic2, dic3];
+        cell.textlabel.text = [titles[indexPath.row] objectForKey:@"name"];
+        cell.headImageView.image = [UIImage imageNamed:[titles[indexPath.row] objectForKey:@"headimage"]];
+    } else {
+        NSArray *titles = @[ dic4, dic5, dic6, dic7];
+        cell.textlabel.text = [titles[indexPath.row] objectForKey:@"name"];
+        cell.headImageView.image = [UIImage imageNamed:[titles[indexPath.row] objectForKey:@"headimage"]];
+    }
+    cell.tailImageView.image = [UIImage imageNamed:@"cm2_lay_icn_topplay"];
+    return cell;
+}
+
+/** 点击 cell 时执行 */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        LJHomeTableViewController *homeVC = [[LJHomeTableViewController alloc] init];
+        NavigationViewController *navigationVC = [[NavigationViewController alloc] initWithRootViewController:homeVC];
+        self.frostedViewController.contentViewController = navigationVC;
+    } else if (indexPath.section == 0 && indexPath.row == 1) {
+        BJAllViewController *bjPictureVC = [[BJAllViewController alloc] init];
+        NavigationViewController *navigationVC = [[NavigationViewController alloc] initWithRootViewController:bjPictureVC];
+        self.frostedViewController.contentViewController = navigationVC;
+    }else if (indexPath.section == 0 && indexPath.row == 2) {
+        ZXViewController *secondVC = [[ZXViewController alloc] init];
+        NavigationViewController *navigationVC = [[NavigationViewController alloc] initWithRootViewController:secondVC];
+        self.frostedViewController.contentViewController = navigationVC;
+    }else if (indexPath.section == 1 && indexPath.row == 0) {
+        if ([UserInfo sharedUserInfo].isLogin == NO) {
+            UIAlertView *loseLogin = [[UIAlertView alloc]initWithTitle:@"提示" message:@"您当前尚未登陆，请先登录！" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles: nil, nil];
+            [loseLogin show];
+        }else{
+            FavoriteTableViewController *favoriteVC = [[FavoriteTableViewController alloc] init];
+            NavigationViewController *navigationVC = [[NavigationViewController alloc] initWithRootViewController:favoriteVC];
+            self.frostedViewController.contentViewController = navigationVC;
+        }
+    }else if (indexPath.section == 1 && indexPath.row == 1) {
+        UIAlertView * alertView = [[ UIAlertView alloc ] initWithTitle : @" 提示 " message :[NSString stringWithFormat:@"已为你清理缓冲%.2fM!",[self folderSizeAtPath:kCaches]] delegate : nil cancelButtonTitle : @" 确定 " otherButtonTitles : nil ];
+        
+        [alertView show ];
+        [self clearCache:kCaches];
+     //    kCaches
+    }else if (indexPath.section == 1 && indexPath.row == 2) {
+        UIAlertView *minze = [[UIAlertView alloc]initWithTitle:@"免责声明" message:@"本应用所有内容收集整理均来自互联网，访问者可将本网站内容用于学习欣赏，以及其他非商业用途，并同时遵循本网站的合法权利。\n\nTLB小组  版本V2.0" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles: nil, nil];
+        [minze show];
+    }else if (indexPath.section == 1 && indexPath.row == 3) {
+        
+        if ([UserInfo sharedUserInfo].isLogin == NO) {
+            UIAlertView *loseLogin = [[UIAlertView alloc]initWithTitle:@"提示" message:@"您当前尚未登陆，请先登录！" delegate:nil cancelButtonTitle:@"确认" otherButtonTitles: nil, nil];
+            [loseLogin show];
+        }else{
+            _successLogin = [[UIAlertView alloc]initWithTitle:@"提示" message:@"确定要注销吗？" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"返回", nil];
+            [_successLogin show];
+        }
+    }
+    [self.frostedViewController hideMenuViewController];
+}
+
+// 点击 cancelButton 实现注销
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0:
+            [UserInfo sharedUserInfo].isLogin = NO;
+            [[NSNotificationCenter defaultCenter] postNotificationName:UserSuccessCancel object:nil];
+            [MBProgressHUD showSuccess:@"注销成功！"];
+            break;
+    }
+}
+
+
+/*
+- (void)loginUser
+{
+    if ([UserInfo sharedUserInfo].isLogin == NO) {
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//        [self.navigationController ];
+//        [self.navigationController presentViewController:naVC animated:YES completion:nil];
+        self.frostedViewController.contentViewController = naVC;
+    }else
+    {
+        _successLogin = [[UIAlertView alloc]initWithTitle:@"提示" message:@"确定要注销吗？" delegate:self cancelButtonTitle:@"确认" otherButtonTitles:@"返回", nil];
+        [_successLogin show];
+    }
+}
+*/
+
+
+- (void)changeImageViewAndLabel
+{
+    if ([UserInfo sharedUserInfo].isLogin == YES) {
+        [_imageView sd_setImageWithURL:[NSURL URLWithString:[UserInfo sharedUserInfo].headImageUrl]];
+        _label.text = [UserInfo sharedUserInfo].userName;
+    }else
+    {
+        _label.text = @"娱 悦";
+        _imageView.image = [UIImage imageNamed:@"headImage"];
+    }
+//    [_label sizeToFit];
+}
+
+- (float)folderSizeAtPath:(NSString *)path{
+    NSFileManager *fileManager=[NSFileManager defaultManager];
+    float folderSize;
+    if ([fileManager fileExistsAtPath:path]) {
+        NSArray *childerFiles=[fileManager subpathsAtPath:path];
+        for (NSString *fileName in childerFiles) {
+            NSString *absolutePath=[path stringByAppendingPathComponent:fileName];
+            folderSize +=[self fileSizeAtPath:absolutePath];
+        }
+        //SDWebImage框架自身计算缓存的实现
+        folderSize+=[[SDImageCache sharedImageCache] getSize]/1024.0/1024.0;
+        return folderSize;
+    }
+    return 0;
+}
+- (float)fileSizeAtPath:(NSString *)path{
+    NSFileManager *fileManager=[NSFileManager defaultManager];
+    if([fileManager fileExistsAtPath:path]){
+        long long size=[fileManager attributesOfItemAtPath:path error:nil].fileSize;
+        return size/1024.0/1024.0;
+    }
+    return 0;
+}
+- (void)clearCache:(NSString *)path{
+    NSFileManager *fileManager=[NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:path]) {
+        NSArray *childerFiles=[fileManager subpathsAtPath:path];
+        for (NSString *fileName in childerFiles) {
+            //如有需要，加入条件，过滤掉不想删除的文件
+            NSString *absolutePath=[path stringByAppendingPathComponent:fileName];
+            [fileManager removeItemAtPath:absolutePath error:nil];
+        }
+    }
+    [[SDImageCache sharedImageCache] cleanDisk];
+}
+
+@end

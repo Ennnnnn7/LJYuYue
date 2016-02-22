@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "beeaf766-232a-43e0-91bd-04c2236e4442++1369" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "beeaf766-232a-43e0-91bd-04c2236e4442++1369" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A7C57D6F-67F6-43DD-B4B5-FAD2523A0B71",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "beeaf766-232a-43e0-91bd-04c2236e4442++1369" : "yuyue2.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "yuyue",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "yuyue.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svnchina.com\/svn\/tlbyy",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "beeaf766-232a-43e0-91bd-04c2236e4442++1369"
+    }
+  ]
+}
